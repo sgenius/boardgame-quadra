@@ -1,0 +1,28 @@
+.cell {
+    display: table-cell;
+    width: 5rem;
+    height: 5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 1rem;
+};
+
+.cell-available {
+	cursor: pointer;
+
+	animation-name: colorpulse;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colorpulse {
+	0% {
+		background-color: rgba(128, 196, 128, 0.2);
+	}
+	50% {
+		background-color: rgba(128, 196, 128, 0.7);
+	}
+	100% {
+		background-color: rgba(128, 196, 128, 0.2);
+	}
+}

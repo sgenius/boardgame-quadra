@@ -1,0 +1,174 @@
+$green: rgb(48, 137, 79);
+$red: rgb(137, 48, 50);
+$blue: rgb(46, 45, 132);
+$yellow: rgb(130, 127, 42);
+$purple: rgb(86, 39, 127);
+$black: rgb(17, 17, 20);
+
+.card {
+	width: 5rem;
+	height: 5rem;
+
+	display: block;
+	position: relative;
+
+	background: rgb(192, 193, 194);
+}
+
+.card-border {
+	width: 3rem;
+	height: 1rem;
+	position: absolute;
+	transform-origin: bottom left;
+}
+
+.card-BORDER_TYPE_GREEN {
+	background-color: $green;
+	border-color: $green;
+}
+
+.card-BORDER_TYPE_RED {
+	background-color: $red;
+	border-color: $red;
+}
+
+.card-BORDER_TYPE_BLUE {
+	background-color: $blue;
+	border-color: $blue;
+}
+
+.card-BORDER_TYPE_YELLOW {
+	background-color: $yellow;
+	border-color: $yellow;
+}
+
+.card-BORDER_TYPE_PURPLE {
+	background-color: $purple;
+	border-color: $purple;
+}
+
+.card-BORDER_TYPE_BLACK {
+	background-color: $black;
+	border-color: $black;
+}
+
+
+.card-border-order-0 {
+	left: 1rem;
+}
+
+.card-border-order-1 {
+	right: -2rem;
+	transform: rotate(90deg);
+}
+
+.card-border-order-2 {
+	bottom: 1rem;
+	left: 4rem;
+	transform: rotate(180deg);
+}
+
+.card-border-order-3 {
+	top: 3rem;
+	left: 1rem;
+	transform: rotate(270deg);
+}
+
+
+.card-border-value {
+	display: inline-block;
+	position: absolute;
+	top: -0.1rem;
+	left: 0.5rem;
+
+	padding: 0.1rem;
+	border-bottom: 1px solid rgb(212, 212, 212);
+
+	color: rgb(212, 212, 212);
+	background: rgba(0, 0, 0, 0.05);
+
+	text-align: center;
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+
+.card-border-icon {
+	display: inline-block;
+	position: absolute;
+
+	top: 0;
+	right: 0.5rem;
+
+	font-size: 0.6rem;
+
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.card-rotation-0 {
+	transform: rotate(0deg);
+	&.animate {
+		animation: rotateanim0 0.5s 1;
+	}
+}
+
+.card-rotation-1 {
+	transform: rotate(90deg);
+	&.animate {
+		animation: rotateanim1 0.5s 1;
+	}
+}
+
+.card-rotation-2 {
+	transform: rotate(180deg);
+	&.animate {
+		animation: rotateanim2 0.5s 1;
+	}
+}
+
+.card-rotation-3 {
+	transform: rotate(270deg);
+	&.animate {
+		animation: rotateanim3 0.5s 1;
+	}
+}
+
+@keyframes rotateanim0 {
+	0% {
+		transform: rotate(270deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+@keyframes rotateanim1 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(90deg);
+	}
+}
+
+@keyframes rotateanim2 {
+	0% {
+		transform: rotate(90deg);
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes rotateanim3 {
+	0% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(270deg);
+	}
+}

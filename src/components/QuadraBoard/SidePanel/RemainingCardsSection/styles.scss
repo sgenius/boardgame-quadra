@@ -1,0 +1,23 @@
+.remaining-cards {
+	width: 100%;
+	height: 1rem;
+	padding: 1rem;
+
+	color: #eee;
+	font-size: 12px;
+
+	box-sizing: border-box;
+}
+
+svg {
+	vertical-align: text-bottom;
+	font-size: 15px;
+}
+
+.remaining-cards-text,
+.remaining-turns-text,
+.points-text,
+.game-over-text {
+	display: inline-block;
+	padding: 1rem;
+}

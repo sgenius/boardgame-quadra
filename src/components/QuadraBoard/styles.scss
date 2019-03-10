@@ -1,0 +1,26 @@
+.quadra-board {
+	display: block;
+	position: relative;
+	background-image: url(./background-board-brown-326311.jpg);
+	background-size: 100% 100%;
+	background-color: #606c88;
+	// background-color: radial-gradient(ellipse at center, #606c88 0%,#3f4c6b 100%);
+	background-blend-mode: soft-light;
+	width: 100vw;
+	height: 100vh;
+
+	&:after {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+
+		
+	}
+}
+
+.debug-ui {
+	z-index: 1;
+}

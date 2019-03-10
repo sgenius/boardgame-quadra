@@ -1,0 +1,25 @@
+.hand {
+	padding: 1rem;
+}
+
+.card-in-hand {
+	float: left;
+	margin: 1rem;
+	width: 5rem;
+	height: 5rem;
+
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.next-in-hand-icons {
+	margin-top: 1rem;
+	color: rgb(212, 212, 212);
+
+	span {
+		margin-right: 0.5rem;
+	}
+
+	svg {
+		font-size: 1.5rem;
+	}
+}
